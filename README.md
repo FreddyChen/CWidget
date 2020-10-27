@@ -1,0 +1,2 @@
+# CWidget
+一些Android通用的常用控件，比如可支持自定义属性shape/selector/corners radius的CTextButton
