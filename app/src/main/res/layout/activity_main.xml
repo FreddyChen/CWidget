@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <com.freddy.widget.CTextButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="测试一下"
+        app:ctb_normalTextColor="#ffffff"
+        app:ctb_pressedTextColor="#f9f9f9"
+        app:ctb_disabledTextColor="#fefefe"
+        app:ctb_normalStrokeColor="#000000"
+        app:ctb_pressedStrokeColor="#990000"
+        app:ctb_disabledStrokeColor="#770000"
+        app:ctb_strokeWidth="4dp"
+        app:ctb_dashWidth="10dp"
+        app:ctb_dashGap="4dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="test"
+        android:enabled="true"
+        android:gravity="center" />
+
+    <com.freddy.widget.CTextButton
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="测试二下"
+        app:ctb_shape="oval"
+        app:ctb_normalTextColor="#ffffff"
+        app:ctb_pressedTextColor="#f9f9f9"
+        app:ctb_disabledTextColor="#fefefe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="test2"
+        android:gravity="center" />
+
+    <com.freddy.widget.CImageButton
+        android:id="@+id/btn_img"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cib_normalImageRes="@drawable/ic_chat_keyboard_normal"
+        app:cib_pressedImageRes="@drawable/ic_chat_keyboard_pressed"
+        app:cib_disabledImageRes="@drawable/img_activite_loading"
+        android:onClick="test3" />
+</LinearLayout>
